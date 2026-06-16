@@ -1,4 +1,4 @@
-# CoverAI — AI Cover Letter Assistant
+# AI Cover Letter Generator
 
 A Streamlit application that creates editable, job-specific cover letters from a resume and job description. The app parses PDF/DOCX resumes, accepts job URLs or pasted job descriptions, previews keyword match, and exports the final cover letter as TXT, DOCX, or PDF.
 
