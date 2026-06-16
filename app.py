@@ -209,9 +209,9 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
 .hero-grid {display:grid; grid-template-columns: 1fr .9fr; gap:34px; align-items:center;}
 .eyebrow {display:inline-flex; padding:7px 13px; border-radius:999px; background:var(--violet-soft); color:var(--violet); font-weight:800; font-size:13.5px; margin-bottom:18px;}
 .hero-title {
-  font-size: 31px;
+  font-size: 30px;
   line-height: 1.2;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.6px;
   margin: 0 0 15px;
   color: var(--ink);
   font-weight: 800;
@@ -256,12 +256,12 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
   .brand-name {font-size:21px;}
 }
 .hero-app-name {
-  font-size: 2.8rem;
+  font-size: 2.45rem;
   font-weight: 900;
   color: var(--ink);
   margin-bottom: 0.9rem;
-  letter-spacing: -0.055em;
-  line-height: 1.05;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
 }
 
 [data-testid="stMarkdownContainer"] a[href^="#"],
