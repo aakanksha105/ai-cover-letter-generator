@@ -133,7 +133,7 @@ section[data-testid="stSidebar"], #MainMenu, footer, div[data-testid="stToolbar"
   background:linear-gradient(135deg, #fff0db, #ffe0d8);
   border:1px solid #e6d1bd; font-size:20px;
 }
-.brand-name {font-weight:850; font-size:25px; letter-spacing:-.45px; color:var(--ink); white-space:nowrap;}
+.brand-name {font-weight:750; font-size:25px; letter-spacing:-.45px; color:var(--ink); white-space:nowrap;}
 .header-nav {display:flex; gap:12px; align-items:center; justify-content:flex-end;}
 .nav-link {
   display:inline-flex; align-items:center; justify-content:center;
@@ -392,7 +392,27 @@ def scroll_to_page_top():
         """,
         height=0,
     )
+def remove_streamlit_component_tooltips():
+    components.html(
+        """
+        <script>
+        function removeStreamlitTooltips() {
+          const parentDoc = window.parent.document;
+          parentDoc.querySelectorAll('iframe[title="streamlitApp"]').forEach((iframe) => {
+            iframe.setAttribute("title", "");
+            iframe.setAttribute("aria-label", "");
+            iframe.style.pointerEvents = "none";
+          });
+        }
 
+        removeStreamlitTooltips();
+        setTimeout(removeStreamlitTooltips, 100);
+        setTimeout(removeStreamlitTooltips, 500);
+        setTimeout(removeStreamlitTooltips, 1000);
+        </script>
+        """,
+        height=0,
+    )
 
 def header():
     current = st.session_state.get("page", "home")
@@ -814,6 +834,7 @@ def main():
     init_state()
     apply_pending_resets()
     st.markdown(CSS, unsafe_allow_html=True)
+    remove_streamlit_component_tooltips()
     page = st.session_state.get("page", "home")
     if page == "create":
         create_page()
