@@ -243,16 +243,12 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
   .brand-name {font-size:21px;}
 }
 .hero-app-name {
-  font-size: 1.15rem;
-  font-weight: 850;
+  font-size: 2.1rem;
+  font-weight: 900;
   color: var(--ink);
-  margin-bottom: 0.8rem;
-  letter-spacing: -0.02em;
-}
-
-.anchor-link {
-  display: none !important;
-  visibility: hidden !important;
+  margin-bottom: 1rem;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
 }
 </style>
 """
