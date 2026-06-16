@@ -31,7 +31,7 @@ A Streamlit application that creates editable, job-specific cover letters from a
 | LLM | OpenAI API, LangChain |
 | Resume parsing | pypdf, python-docx |
 | Job extraction | Playwright, requests, BeautifulSoup, trafilatura, JSON-LD parsing |
-| Keyword analysis | Python, regex, curated skill catalog, optional LLM skill extraction |
+| Keyword analysis | Python, regex, curated skill catalog, LLM skill extraction |
 | Export | python-docx, ReportLab |
 | Testing | pytest |
 | Packaging | Poetry, Docker |
