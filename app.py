@@ -208,7 +208,7 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
   letter-spacing: -0.6px;
   margin: 0 0 15px;
   color: var(--ink);
-  font-weight: 750;
+  font-weight: 700;
 }
 .hero-subtitle {font-size:16px; line-height:1.65; color:var(--muted); margin:0; max-width:520px;}
 .home-note {font-size:13.5px; color:var(--muted); text-align:center; margin-top:8px;}
@@ -250,8 +250,8 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
   .brand-name {font-size:21px;}
 }
 .hero-app-name {
-  font-size: 2.35rem;
-  font-weight: 900;
+  font-size: 2.45rem;
+  font-weight: 850;
   color: var(--ink);
   margin-bottom: 0.9rem;
   letter-spacing: -0.045em;
@@ -269,6 +269,17 @@ h3 a[href^="#"] {
   width: 0 !important;
   height: 0 !important;
   overflow: hidden !important;
+}
+iframe[title="streamlitApp"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
 }
 </style>
 """
