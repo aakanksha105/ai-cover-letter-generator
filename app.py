@@ -133,7 +133,13 @@ section[data-testid="stSidebar"], #MainMenu, footer, div[data-testid="stToolbar"
   background:linear-gradient(135deg, #fff0db, #ffe0d8);
   border:1px solid #e6d1bd; font-size:20px;
 }
-.brand-name {font-weight:850; font-size:25px; letter-spacing:-.45px; color:var(--ink); white-space:nowrap;}
+.brand-name {
+  font-weight: 850;
+  font-size: 20px;
+  letter-spacing: -0.35px;
+  color: var(--ink);
+  white-space: nowrap;
+}
 .header-nav {display:flex; gap:12px; align-items:center; justify-content:flex-end;}
 .nav-link {
   display:inline-flex; align-items:center; justify-content:center;
@@ -202,7 +208,14 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
 }
 .hero-grid {display:grid; grid-template-columns: 1fr .9fr; gap:34px; align-items:center;}
 .eyebrow {display:inline-flex; padding:7px 13px; border-radius:999px; background:var(--violet-soft); color:var(--violet); font-weight:800; font-size:13.5px; margin-bottom:18px;}
-.hero-title {font-size:40px; line-height:1.13; letter-spacing:-1.05px; margin:0 0 15px; color:var(--ink); font-weight:850;}
+.hero-title {
+  font-size: 31px;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+  margin: 0 0 15px;
+  color: var(--ink);
+  font-weight: 800;
+}
 .hero-subtitle {font-size:16px; line-height:1.65; color:var(--muted); margin:0; max-width:520px;}
 .home-note {font-size:13.5px; color:var(--muted); text-align:center; margin-top:8px;}
 .info-panel {background:#fff; border:1px solid var(--line); border-radius:22px; padding:25px; box-shadow:0 14px 34px rgba(35,25,8,.045);}
@@ -243,12 +256,25 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
   .brand-name {font-size:21px;}
 }
 .hero-app-name {
-  font-size: 2.1rem;
+  font-size: 2.8rem;
   font-weight: 900;
   color: var(--ink);
-  margin-bottom: 1rem;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
+  margin-bottom: 0.9rem;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+[data-testid="stMarkdownContainer"] a[href^="#"],
+[data-testid="stMarkdownContainer"] a.anchor-link,
+.anchor-link,
+h1 a[href^="#"],
+h2 a[href^="#"],
+h3 a[href^="#"] {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 </style>
 """
@@ -374,7 +400,7 @@ def header():
               <a class="brand-link" href="?page=home" target="_self">
                 <div class="brand">
                   <div class="brand-icon">✍️</div>
-                  <div class="brand-name">Cover Letter AI</div>
+                  <div class="brand-name">CoverAI</div>
                 </div>
               </a>
               <div class="header-nav">
@@ -403,7 +429,7 @@ def home_page():
         <div class="hero">
           <div class="hero-grid">
             <div>
-              <div class="hero-app-name">Cover Letter AI</div>
+              <div class="hero-app-name">AI Cover Letter Assistant</div>
               <div class="eyebrow">Role-matched drafts</div>
               <h1 class="hero-title">Create a tailored cover letter from your resume and job listing.</h1>
               <p class="hero-subtitle">Upload your resume, fetch or paste the job description, review matched keywords, and generate an editable cover letter.</p>
