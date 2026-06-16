@@ -133,13 +133,7 @@ section[data-testid="stSidebar"], #MainMenu, footer, div[data-testid="stToolbar"
   background:linear-gradient(135deg, #fff0db, #ffe0d8);
   border:1px solid #e6d1bd; font-size:20px;
 }
-.brand-name {
-  font-weight: 850;
-  font-size: 20px;
-  letter-spacing: -0.35px;
-  color: var(--ink);
-  white-space: nowrap;
-}
+.brand-name {font-weight:850; font-size:25px; letter-spacing:-.45px; color:var(--ink); white-space:nowrap;}
 .header-nav {display:flex; gap:12px; align-items:center; justify-content:flex-end;}
 .nav-link {
   display:inline-flex; align-items:center; justify-content:center;
