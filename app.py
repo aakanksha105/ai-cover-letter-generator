@@ -242,6 +242,18 @@ div[data-testid="stFileUploader"] section * {color: var(--ink) !important;}
   .hero-title {font-size:31px;}
   .brand-name {font-size:21px;}
 }
+.hero-app-name {
+  font-size: 1.15rem;
+  font-weight: 850;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+.anchor-link {
+  display: none !important;
+  visibility: hidden !important;
+}
 </style>
 """
 
@@ -366,7 +378,7 @@ def header():
               <a class="brand-link" href="?page=home" target="_self">
                 <div class="brand">
                   <div class="brand-icon">✍️</div>
-                  <div class="brand-name">AI Cover Letter Generator</div>
+                  <div class="brand-name">Cover Letter AI</div>
                 </div>
               </a>
               <div class="header-nav">
@@ -395,6 +407,7 @@ def home_page():
         <div class="hero">
           <div class="hero-grid">
             <div>
+              <div class="hero-app-name">Cover Letter AI</div>
               <div class="eyebrow">Role-matched drafts</div>
               <h1 class="hero-title">Create a tailored cover letter from your resume and job listing.</h1>
               <p class="hero-subtitle">Upload your resume, fetch or paste the job description, review matched keywords, and generate an editable cover letter.</p>
@@ -414,7 +427,7 @@ def home_page():
     st.write("")
     if st.button("Start creating", type="primary", use_container_width=True):
         go("create")
-    st.markdown('<div class="home-note">No signup required · Paste a job description · Export as DOCX/PDF</div>', unsafe_allow_html=True)
+    st.markdown('<div class="home-note">Upload resume · Add job listing · Generate and export</div>', unsafe_allow_html=True)
 
 
 def faq_page():
